@@ -35,24 +35,28 @@ int main()
     while(input != 'q'){
         switch(input){
             case 'l':
+            case 'd':
                 if(c-1 >= 0){
                     swap(&table[r][c], &table[r][c-1]);
                     c--;
                 }
                 break;
             case 'k':
+            case 'w':
                 if(r+1 < SIZE){
                     swap(&table[r][c], &table[r+1][c]);
                     r++;
                 }
                 break;
             case 'j':
+            case 's':
                 if(r-1 >= 0){
                     swap(&table[r][c], &table[r-1][c]);
                     r--;
                 }
                 break;
             case 'h':
+            case 'a':
                 if(c+1 < SIZE){
                     swap(&table[r][c], &table[r][c+1]);
                     c++;
